@@ -763,20 +763,22 @@
 </div>
 
 <script src="/libs/valine/av-min.js"></script>
-<script src="/libs/valine/Valine.min.js"></script>
+<script src="https://unpkg.com/valine/dist/Valine.min.js"></script>
 <script>
     new Valine({
-        el: '#vcomments',
+            el: '#vcomments',
         appId: 'l3Fqahox1LBBjyC3hdlctegf-gzGzoHsz',
         appKey: 'dGNHUMSfKXqYv1h8g0UyogKs',
-        serverURLs: '',
         notify: 'false' === 'true',
         verify: 'false' === 'true',
         visitor: 'true' === 'true',
         avatar: 'mm',
         pageSize: '10',
         lang: 'en',
-        placeholder: 'just go go'
+        placeholder: '讲点啥',
+        enableQQ: true,
+        emojiCDN: '//i0.hdslb.com/bfs/emote/',
+        requiredFields: ['nick','mail'], //设置必填项
     });
 </script>
 
